@@ -1,9 +1,17 @@
+import { Routes, Route } from "react-router";
+import Header from "./components/widgets/Header";
 import "./styles/main.css";
+import HomePage from "./components/pages/HomePage";
 
 function App() {
     return (
-        <div className="bg-sky-200">
-            <h1 className="text-9xl">test</h1>
+        <div className="min-h-svh bg-slate-800">
+            <div className="max-w-6xl mx-auto max-xl:px-4">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                </Routes>
+            </div>
         </div>
     );
 }
