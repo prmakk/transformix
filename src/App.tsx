@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Base64EncodePage from "./components/pages/Base64EncodePage";
 import Base64DecodePage from "./components/pages/Base64DecodePage";
 import ToUpperPage from "./components/pages/ToUpperPage";
+import ToLowerPage from "./components/pages/ToLowerPage";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                         element={<Base64DecodePage />}
                     />
                     <Route path="/upper" element={<ToUpperPage />} />
+                    <Route path="/lower" element={<ToLowerPage />} />
                 </Routes>
                 <Toaster position="top-right" />
             </div>

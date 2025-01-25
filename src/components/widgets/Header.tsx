@@ -19,14 +19,18 @@ const Header: FC = () => {
             link: "/upper",
             title: "To Upper Case",
         },
+        {
+            link: "/lower",
+            title: "To Lower Case",
+        },
     ];
     return (
-        <header className="flex justify-between items-center py-4 text-white">
+        <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">
             <Link to="/" className="text-2xl font-bold">
                 TransformiX
             </Link>
 
-            <div className=" max-w-3xl rounded border-slate-500 border-1 p-3 flex gap-2 flex-wrap">
+            <div className=" max-w-148 rounded border-slate-500 border-1 p-3 flex gap-2 flex-wrap">
                 {urls.map((url) => (
                     <NavLink
                         key={url.link}
