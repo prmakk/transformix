@@ -15,6 +15,10 @@ const Header: FC = () => {
             link: "/base64/decode",
             title: "Base64 Decode",
         },
+        {
+            link: "/upper",
+            title: "To Upper Case",
+        },
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white">

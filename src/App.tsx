@@ -7,6 +7,7 @@ import ReversePage from "./components/pages/ReversePage";
 import { Toaster } from "react-hot-toast";
 import Base64EncodePage from "./components/pages/Base64EncodePage";
 import Base64DecodePage from "./components/pages/Base64DecodePage";
+import ToUpperPage from "./components/pages/ToUpperPage";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         path="/base64/decode"
                         element={<Base64DecodePage />}
                     />
+                    <Route path="/upper" element={<ToUpperPage />} />
                 </Routes>
                 <Toaster position="top-right" />
             </div>
