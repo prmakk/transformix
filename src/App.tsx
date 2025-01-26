@@ -11,6 +11,7 @@ import ToUpperPage from "./components/pages/ToUpperPage";
 import ToLowerPage from "./components/pages/ToLowerPage";
 import BinaryEncodePage from "./components/pages/BinaryEncodePage";
 import BinaryDecodePage from "./components/pages/BinaryDecodePage";
+import GenerateQrPage from "./components/pages/GenerateQrPage";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                         path="/binary/decode"
                         element={<BinaryDecodePage />}
                     />
+                    <Route path="/qr" element={<GenerateQrPage />} />
                 </Routes>
                 <Toaster position="top-right" />
             </div>
