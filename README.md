@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TransformiX
 
-Currently, two official plugins are available:
+An online application that helps you encode/decode data using various ciphers (base64, caesar cipher), edit images and generate QRs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![App Screenshot](https://i.imgur.com/syNOtwb.png)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/prmakk/transformix.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Go to the project directory
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+  cd my-project
 ```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## FAQ
+
+#### Do you use a server to process my data? If I want to encrypt my password, will you save it?
+
+This happens fully in your browser using JavaScript, no content will be sent to any kind of server. Please note that the encryption methods offered below are very basic and therefore not considered as secure.
+
+#### Is this tool free to use?
+
+Yes, this tool is completely free and open-source. You can use it for personal or educational purposes without any restrictions.
+
+#### What browsers are supported?
+
+This tool should work on all modern browsers, including Chrome, Firefox, Safari, and Edge. For the best experience, ensure your browser is up to date.
+
+#### Why do I see strange characters in the output?
+
+Strange characters may appear if the input binary string is invalid or incomplete. Ensure that the binary string is correctly formatted (e.g., "01101000 01100101 01101100 01101100 01101111" for "hello").
+
+#### What is binary encoding/decoding?
+
+Binary encoding is the process of converting text or data into a binary format (a series of 0s and 1s). Binary decoding is the reverse process, where binary data is converted back into human-readable text.
+
+
+## Tech Stack
+
+**React, Typescript, TailwindCSS**
+
