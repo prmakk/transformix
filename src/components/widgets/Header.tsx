@@ -23,6 +23,10 @@ const Header: FC = () => {
             link: "/lower",
             title: "To Lower Case",
         },
+        {
+            link: "/binary/encode",
+            title: "Binary Encode",
+        },
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">
