@@ -34,7 +34,7 @@ const Header: FC = () => {
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">
-            <Link to="/" className="text-2xl font-bold">
+            <Link to="/" className="text-2xl font-bold hover:text-sky-400">
                 TransformiX
             </Link>
 
