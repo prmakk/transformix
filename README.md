@@ -1,13 +1,11 @@
-
 # TransformiX
 
 An online application that helps you encode/decode data using various ciphers (base64, caesar cipher), edit images and generate QRs
 
-
 ## Screenshots
 
+![App Screenshot](https://i.imgur.com/43vtgN4.png)
 ![App Screenshot](https://i.imgur.com/syNOtwb.png)
-
 
 ## Run Locally
 
@@ -35,7 +33,6 @@ Start the server
   npm run dev
 ```
 
-
 ## FAQ
 
 #### Do you use a server to process my data? If I want to encrypt my password, will you save it?
@@ -58,8 +55,6 @@ Strange characters may appear if the input binary string is invalid or incomplet
 
 Binary encoding is the process of converting text or data into a binary format (a series of 0s and 1s). Binary decoding is the reverse process, where binary data is converted back into human-readable text.
 
-
 ## Tech Stack
 
 **React, Typescript, TailwindCSS**
-
