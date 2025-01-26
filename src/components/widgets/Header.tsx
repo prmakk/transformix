@@ -27,6 +27,10 @@ const Header: FC = () => {
             link: "/binary/encode",
             title: "Binary Encode",
         },
+        {
+            link: "/binary/decode",
+            title: "Binary Decode",
+        },
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">

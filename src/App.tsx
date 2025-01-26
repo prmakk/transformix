@@ -10,6 +10,7 @@ import Base64DecodePage from "./components/pages/Base64DecodePage";
 import ToUpperPage from "./components/pages/ToUpperPage";
 import ToLowerPage from "./components/pages/ToLowerPage";
 import BinaryEncodePage from "./components/pages/BinaryEncodePage";
+import BinaryDecodePage from "./components/pages/BinaryDecodePage";
 
 function App() {
     return (
@@ -32,6 +33,10 @@ function App() {
                     <Route
                         path="/binary/encode"
                         element={<BinaryEncodePage />}
+                    />
+                    <Route
+                        path="/binary/decode"
+                        element={<BinaryDecodePage />}
                     />
                 </Routes>
                 <Toaster position="top-right" />
