@@ -46,7 +46,7 @@ const Header: FC = () => {
                 TransformiX
             </Link>
 
-            <div className=" max-w-148 rounded border-slate-500 border-1 p-3 flex gap-2 flex-wrap">
+            <div className=" max-w-148 rounded border-slate-500 border-1 p-3 flex gap-2 flex-wrap max-md:justify-center">
                 {urls.map((url) => (
                     <NavLink
                         key={url.link}
