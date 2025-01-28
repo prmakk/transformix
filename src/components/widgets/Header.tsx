@@ -39,6 +39,10 @@ const Header: FC = () => {
             link: "/caesar/encode",
             title: "Caesar Encode",
         },
+        {
+            link: "/caesar/decode",
+            title: "Caesar Decode",
+        },
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">

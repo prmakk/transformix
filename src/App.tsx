@@ -13,6 +13,7 @@ import BinaryEncodePage from "./components/pages/BinaryEncodePage";
 import BinaryDecodePage from "./components/pages/BinaryDecodePage";
 import GenerateQrPage from "./components/pages/GenerateQrPage";
 import CaesarEncodePage from "./components/pages/CaesarEncodePage";
+import CaesarDecodePage from "./components/pages/CaesarDecodePage";
 
 function App() {
     return (
@@ -44,6 +45,10 @@ function App() {
                     <Route
                         path="/caesar/encode"
                         element={<CaesarEncodePage />}
+                    />
+                    <Route
+                        path="/caesar/decode"
+                        element={<CaesarDecodePage />}
                     />
                 </Routes>
                 <Toaster position="top-right" />
