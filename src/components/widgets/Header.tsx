@@ -35,6 +35,10 @@ const Header: FC = () => {
             link: "/qr",
             title: "Generate QR",
         },
+        {
+            link: "/caesar/encode",
+            title: "Caesar Encode",
+        },
     ];
     return (
         <header className="flex justify-between items-center py-4 text-white max-md:flex-col gap-2">
